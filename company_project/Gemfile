@@ -1,0 +1,16 @@
+source 'https://rubygems.org'
+
+gem 'rerun', '~> 0.13.0'
+gem 'sinatra', '~> 2.0', '>= 2.0.8.1'
+gem "json", "1.8.6"
+gem 'dm-serializer', '~> 1.2', '>= 1.2.2'
+gem 'sinatra-contrib', '~> 2.0', '>= 2.0.8.1'
+gem 'rake'
+gem 'data_mapper', '~> 1.2'
+gem 'dm-core', '~> 1.2', '>= 1.2.1'
+gem 'do_sqlite3', '~> 0.10.17'
+gem 'dm-sqlite-adapter'
+gem 'dm-timestamps', '~> 1.2'
+gem 'dm-validations', '~> 1.2'
+gem 'dm-aggregates', '~> 1.2'
+gem 'dm-migrations', '~> 1.2'
