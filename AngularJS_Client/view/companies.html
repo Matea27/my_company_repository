@@ -1,0 +1,15 @@
+
+<h1>List of all companies</h1>
+<table>
+  <tr ng-repeat="company in companies">
+    <td style="width: 30%">{{company.name}}</td>
+    <td  style="width: 30%">
+      <a  ui-sref="viewCompany({id:company.id})">View</a>
+      <a  ui-sref="addOwner">Add owner </a>
+      <button ng-click="deleteCompany(company.id)">Delete</button>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<a ui-sref="newCompany">Add New Company</a>

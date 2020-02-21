@@ -1,0 +1,19 @@
+<div>
+  <br>
+<strong>  <label for="Name" >Add Owner</label> </strong>
+  <br>
+  <br>
+  <div>
+    <fieldset>
+      <legend>Name and surname of the owner(s)</legend>
+        <strong> Company Id : </strong><br>   <input ng-model="owner.company_id" ng-value="company.id" type="text" id="{{company.id}}" /> {{company.id}}
+          <br>
+            <strong>  Name : </strong><br> <input ng-model="owner.name" id="name"" />
+            <br>
+          <strong>  Surname : </strong><br><input ng-model="owner.surname" id="surname"" />
+          <br>
+          <input type="submit" value="Save" />
+      </fieldset>
+    </div>
+
+</div>
