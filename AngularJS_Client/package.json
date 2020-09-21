@@ -11,7 +11,7 @@
     "grunt-connect-route": "~0.3.4",
     "angular-route": "~1.7.9",
     "angular-ui-router": "~1.0.25",
-    "angular": "~1.7.9"
+    "angular": "~1.8.0"
   },
   "description": "client side",
   "main": "Gruntfile.js",
