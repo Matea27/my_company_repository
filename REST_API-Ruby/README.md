@@ -270,10 +270,6 @@ With the running in Terminal, you can visit e.g. http://localhost:5000/companies
 The Bundler command ```bundle exec ``` executes a script in the context of the current bundle and it makes all gems specified in the Gemfile avaliable to require in our Ruby program.
 
 # CONSIDERATIONS
-###### You do not need to add authentication to your web service, but propose a protocol / method and justify your choice.
-
-In order to log in, user must enter their username and password. On the server side, the passwords are stored in the database using the SHA_512 hashing algorithm with a 32-bit salt. Salting a hash means adding a random string of characters—called a “salt”—to the beginning or end of your password before hashing it. To secure password and username transit between the user computer and the server(s), HTTPS is used. HTTPS is an internet communication protocol that keeps the data confidential by using the Transport Layer Security protocol (TSL). The hash of the user data entered on the web page is compared to the hash stored in the database on a server side. If the data is successfully entered, the user POST the data to a controller route in the Sinatra app. That controller route reads the user's username and password from the params hash. That information is used to find the correct user from the database with a line such as User.find_by(username: params[:username], password: params[:password]).
-Then, that user's ID is stored as the value of session[:user_id]. Therefore, we can examine on the session hash in any other controller route and take the current user by matching up a user ID with the value in session[:user_id]. That means that, for the period of the session, the app will know who the current user is on every page.
 
 
 ##### How can you implement versioning of all the data?
